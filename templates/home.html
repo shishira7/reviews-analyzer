@@ -75,14 +75,14 @@
         <form action="results">
             <div class="form-group">
                 <h2 style="text-align: center;padding-top: 77px;padding-bottom: 15px;color:bisque;font-size: 45px;">
-                    <i>Enter the product page url...</i></h2>
+                    <i>Enter the product page url</i></h2>
                 <div style="margin: 0 auto;width: 60%;">
+                   
+                    <input type="url" class="form-control" name='url' id="url" pattern="https://www.flipkart.com/.*" style='border-radius:1.25rem;margin-top: 10px;
+                        margin-bottom: 30px;height: 70px;' placeholder='Please enter a valid flipkart url (https://www.flipkart.com/..)' required>
                     
-                    <input type="url" class="form-control" name='url' id="url" style='border-radius:1.25rem;margin-top: 10px;
-                        margin-bottom: 30px;height: 70px;' placeholder='Please enter a valid url'>
-                    
-                    <input type="number" class="form-control" name='num' id="num" style='border-radius:1.25rem;height: 70px;margin-bottom: 40px;
-                        ' placeholder='Please enter the no. of reviews you want to analyze'>
+                    <input type="number" class="form-control" name='num' id="num" min = "2" style='border-radius:1.25rem;height: 70px;margin-bottom: 40px;
+                        ' placeholder='Please enter the no. of reviews you want to analyze' required>
                     
                     <div style="text-align: center" ;>
                         <button style="width: 280px;font-size: 30px;height: 62px;border-radius: 2.25rem;" type="submit" class="btn btn-primary" onclick="spinner()">Search</button>
